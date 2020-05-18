@@ -1,4 +1,4 @@
-import pygame, random, sys
+import pygame, random
 import time
 
 
@@ -26,6 +26,7 @@ pos_y = 610
 fundo = pygame.display.set_mode((largura, altura))
 pygame.display.set_caption('Jogo da Forca')
 font = pygame.font.Font('FFF_Tusj.ttf', 35)
+font2 = pygame.font.Font('FFF_Tusj.ttf', 45)
 texto = font.render("Forca" , True, (0, 0, 0))
 dica = font.render("DICA: ", True, (255,255,255))
 enforcado= font.render("Enforcado" , True, (0, 0, 0))
@@ -81,22 +82,36 @@ pygame.mixer.music.play()
 
 while sair:
     fundo.fill(branco)
-
+    cont=0
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             sair = False
         if event.type == pygame.KEYDOWN:
             a = event.key
             a = chr(a)
-            print(a)
+            print(a.upper())
+
+
             for n, letra in enumerate(myline):
 
+
                 if myline[n] == a.upper():
+
                     t[n] = myline[n]
-                    print('possui')
-                    print('teste:',t)
-                    print(direita)
+
                     aa = font.render(str(t), True, (0, 0, 0))
+
+                    if '_' not in t:
+                        pygame.mixer.music.stop('suspense.mp3')
+                        #pygame.mixer.music.load('APLAUSOS.mp4')
+                        #pygame.mixer.music.play()
+                        iforca = pygame.image.load('forca.png')
+                        fundo.blit(iforca, (0, 0))
+                        pygame.draw.rect(fundo, marrom, [pos_x, pos_y, tamanho_b, tamanho_a])
+                        bb = font2.render(str('Voce Ganhou!!!'), True, (255, 255, 255))
+                        fundo.blit(bb, (550, 620))
+                        pygame.display.update()
+                        time.sleep(5)
 
 
 
