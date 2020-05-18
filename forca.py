@@ -102,9 +102,9 @@ while sair:
                     aa = font.render(str(t), True, (0, 0, 0))
 
                     if '_' not in t:
-                        pygame.mixer.music.stop('suspense.mp3')
-                        #pygame.mixer.music.load('APLAUSOS.mp4')
-                        #pygame.mixer.music.play()
+                        pygame.mixer.music.stop()
+                        pygame.mixer.music.load('APLAUSOS.mp3')
+                        pygame.mixer.music.play()
                         iforca = pygame.image.load('forca.png')
                         fundo.blit(iforca, (0, 0))
                         pygame.draw.rect(fundo, marrom, [pos_x, pos_y, tamanho_b, tamanho_a])
