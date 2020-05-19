@@ -1,0 +1,26 @@
+PALAVRA = Unidade da lingua escrita
+AMOR = Sentimentos
+ARMARIO = Guarda objetos
+TELEVISAO = Aparelho de comunicação
+VENTILADOR = Faz diferença no calor
+CUECA = Roupas de baixo
+VASO = Utilizado pelas plantas
+TELEFONE = Meio de comunicação
+MESA = Moveis de casa
+BLUSA = Roupas
+PERFUME = Que cheiro bom!
+CHULE = Que cheiro ruim!
+CALCA = Roupas
+TRAVESSEIRO = Para dormir
+CREME = Vamos passar no rosto
+PREGADOR = Segura as roupas na corda
+GRADE = ladrão fica atras dela
+JANELA = abra e veja o sol
+TAPETE = estenda no chão
+ESCOVA = acordou, vá ...
+BANCO = Vai sentar no ...
+CADEIRA = Vai sentar na ...
+FOTOGRAFIA = Recordaçao
+LUMINARIA = Coloque a lampada na ...
+COPO = Esta com sede? use um ...
+
